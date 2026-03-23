@@ -8,7 +8,7 @@ import './style.css';
 
 export function Location() {
     return (
-        <section className="location" style={{ backgroundImage: `url(${bgBatikImg})` }}>
+        <section className="location" style={{ backgroundImage: `url(${bgBatikImg})` }} id="lokasi">
             <img src={bgShadowImg} className='location-bg-img'/>
 
             <div className='location-cover-img' style={{ backgroundImage: `url(${bgCoverImg})`}}>

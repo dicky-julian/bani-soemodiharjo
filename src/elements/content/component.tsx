@@ -23,9 +23,11 @@ export function Content() {
                 </b>
             </p>
 
-            <button type='button' className='content-direction-button'>
-                LIHAT LOKASI
-            </button>
+            <a href="#lokasi" className='location-direction-button'>
+                <button type='button'>
+                    LIHAT LOKASI
+                </button>
+            </a>
         </section>
     )
 }

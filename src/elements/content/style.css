@@ -37,8 +37,12 @@
 
 .content-direction-button {
     z-index: 2;
+}
+
+.content-direction-button > button {
     background-color: var(--primary);
     padding: 0.75rem 2rem;
+    margin-bottom: 7.5rem;
     color: white;
     font-weight: bold;
     border: none;
