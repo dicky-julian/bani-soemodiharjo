@@ -1,0 +1,1 @@
+export { FlowerAnimation as default } from './components';

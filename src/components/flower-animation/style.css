@@ -1,0 +1,95 @@
+.flower-imgs > img,
+.wayang-imgs > img {
+  position: absolute;
+  bottom: 0;
+}
+
+.flower-imgs {
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  bottom: -5%;
+  width: 100%;
+}
+
+.flower-imgs > .flower-img-0 {
+  width: 50%;
+  left: 35%;
+  animation-duration: 5s;
+}
+
+.flower-imgs > .flower-img-1 {
+  width: 40%;
+  left: -5%;
+}
+
+.flower-imgs > .flower-img-2 {
+  width: 40%;
+  right: -15%;
+  bottom: 2rem;
+  animation-duration: 3s;
+}
+
+.flower-imgs > .flower-img-3 {
+  width: 50%;
+  left: -5%;
+  animation-duration: 10s;
+}
+
+.flower-imgs > .flower-img-4 {
+  width: 50%;
+  right: -5%;
+  animation-duration: 10s;
+}
+
+.flower-imgs > .flower-img-5 {
+  width: 25%;
+  left: 25%;
+}
+
+.flower-imgs > .flower-img-6 {
+  width: 30%;
+  right: 15%;
+  bottom: -1rem;
+}
+
+.flower-imgs > .flower-img-7 {
+  width: 20%;
+  left: 45%;
+  animation-duration: 3s;
+}
+
+.wayang-imgs {
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  bottom: -2%;
+  width: 100%;
+}
+
+.wayang-imgs > img:nth-child(1) {
+  left: -14%;
+  bottom: 0;
+  width: 35%;
+}
+
+.wayang-imgs > img:nth-child(2) {
+  right: -14%;
+  bottom: 0;
+  width: 35%;
+}
+
+.animation-flowerleft {
+  animation-name: flowerleft !important;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 7s;
+  transform-origin: bottom left;
+}
+
+@keyframes flowerleft {
+  0% { transform: translate(0%, 0%) rotate(0deg); }
+  50% { transform: translate(0%, 0%) rotate(6deg); }
+  100% { transform: translate(0%, 0%) rotate(0deg); }
+}
