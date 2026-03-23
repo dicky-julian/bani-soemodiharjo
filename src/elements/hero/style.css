@@ -14,9 +14,9 @@
 }
 
 .hero-caption > h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  line-height: 2rem;
+  line-height: 1.7rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -24,13 +24,13 @@
 .hero-caption > h2 {
   margin-top: -1rem;
   margin-bottom: 3rem;
-  font-size: 2.9rem;
+  font-size: 2.65rem;
 }
 
 .hero-caption > h3 {
-font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
 }

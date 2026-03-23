@@ -20,6 +20,8 @@ export function Hero() {
             <img src={gateImg} className='hero-gate-img' />
 
             <FlowerAnimation />
+
+            <img  />
         </section>
     )
 }
