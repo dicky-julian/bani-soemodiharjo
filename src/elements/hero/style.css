@@ -2,6 +2,31 @@
   overflow: hidden;
 }
 
+.hero > .animation-decoration {
+  z-index: 4;
+  position: absolute;
+  top: 10%;
+}
+
+.hero > .animation-decoration-left {
+  width: 40%;
+  left: -15%;
+}
+
+.hero > .animation-decoration > img {
+  transform: rotate(20deg);
+  width: 100%;
+}
+
+.hero > .animation-decoration-right {
+  width: 40%;
+  right: -15%;
+}
+
+.hero > .animation-decoration-right > img {
+  transform: scaleX(-1) rotate(20deg)
+}
+
 .hero-caption {
   z-index: 3;
   width: 100%;
@@ -14,9 +39,9 @@
 }
 
 .hero-caption > h1 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
-  line-height: 1.7rem;
+  line-height: 1.5rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -24,13 +49,13 @@
 .hero-caption > h2 {
   margin-top: -1rem;
   margin-bottom: 3rem;
-  font-size: 2.65rem;
+  font-size: 2.25rem;
 }
 
 .hero-caption > h3 {
   font-weight: bold;
-  font-size: 1.25rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 0.9rem;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
 }
@@ -51,4 +76,34 @@
   position: absolute;
   left: 0;
   width: 100%;
+}
+
+.animation-decoration-left {
+  animation-name: flowerdecorationleft !important;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 7s;
+  transform-origin: bottom left;
+}
+
+.animation-decoration-right {
+  animation-name: flowerdecorationright !important;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 7s;
+  transform-origin: bottom right;
+}
+
+@keyframes flowerdecorationleft {
+  0% { transform: translate(0%,0%) rotate(0deg); }
+  50% { transform: translate(0%,0%) rotate(6deg); }
+  100% { transform: translate(0%,0%) rotate(0deg); }
+}
+
+@keyframes flowerdecorationright {
+  0% { transform: translate(0%,0%) rotate(0deg); }
+  50% { transform: translate(0%,0%) rotate(-6deg); }
+  100% { transform: translate(0%,0%) rotate(0deg); }
 }
